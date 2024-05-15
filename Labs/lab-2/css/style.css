@@ -1,0 +1,36 @@
+/** Step one **/
+
+/** Step two **/
+
+h1,h2,h3{
+
+    font-family: "Roboto Mono";
+}
+
+
+/** Step three **/
+h1{
+    font-size: 46px;
+    justify-content: center;
+    text-align: center;
+    color: aqua;
+    letter-spacing: 1.50px;
+    }
+/** Step four **/
+
+a,li,p{
+    font-family: "Cabin";
+
+}
+/** Step five **/
+span{
+
+color: blueviolet;
+}
+/** Step six **/
+
+h3{
+font-size: 30px;
+text-shadow: 3px 1px 3px rgb(0, 0, 0.8);
+
+}
