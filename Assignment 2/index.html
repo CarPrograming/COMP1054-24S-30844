@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="This week we will continue to look at how to add enhancements to increase our users engagement">
+  <meta name="robots" content="noindex, nofollow">
+
+  <title>Chocolate Store</title>
+  <!-- add fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playwrite+DK+Loopet:wght@100..400&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playwrite+DK+Loopet:wght@100..400&family=Sevillana&display=swap"
+    rel="stylesheet">
+
+  <!-- add CSS -->
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- add jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="./js/custom-js.js"></script>
+</head>
+
+
+<body>
+  <header>
+    <div>
+      <a href="index.html"><img src="./img/logo.png" alt="logo"></a>
+    </div>
+    <nav>
+      <menu>
+        <li><a href="#Products">Products</a></li>
+        <li><a href="#ContactUs">Contact Us</a></li>
+        <li><a href="#Aboutus">About us</a></li>
+      </menu>
+    </nav>
+  </header>
+  <section class="MyBanner">
+    <div>
+      <h1>Welcome to Chocolate World</h1>
+    </div>
+  </section>
+  <main>
+    <section class="Mycontent">
+
+      <div class="wrapper">
+        <div class="Chocolate-img">
+          <img src="./img/choco1.jpg" alt="first chocolatte">
+        </div>
+        <div class="chocolate-info">
+          <div class="chocolate-text">
+            <h3>Chocolate box</h3>
+
+            <p>Our assorted chocolates, crafted with the finest ingredients,
+              offer a delightful variety of rich, velvety dark, smooth milk,
+              and flavorful fruit-infused pieces,
+              perfect for gifting or personal indulgence.</p>
+
+          </div>
+        </div>
+      </div>
+      <div class="wrapper">
+        <div class="Chocolate-img">
+          <img src="./img/choco2.jpg" alt="second chocolate">
+        </div>
+        <div class="chocolate-info">
+          <div class="chocolate-text">
+            <h3>Chocolate Cake</h3>
+
+            <p>A chocolate cake is a rich and moist dessert
+              made with cocoa powder or melted chocolate,
+              often topped with a creamy chocolate frosting.
+              Its dense texture and intense flavor make it a favorite
+              for celebrations and indulgent treats.</p>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="logoSocial">
+      <div>
+        <a href="#dd"><img src="./img/facebook.png" alt="logo"></a>
+      </div>
+      <div>
+        <a href="#dd"><img src="./img/instagram.png" alt="logo"></a>
+      </div>
+      <div>
+        <a href="#dd"><img src="./img/twitter.png" alt="logo"></a>
+      </div>
+    </div>
+    <section class="myContainerForm">
+
+
+      <form action="/submit_form" id="contact-form" method="post" class="form">
+        <h6>Contact form Form</h6>
+        <fieldset>
+
+          <div class="names">
+            <div class="name-field">
+              <label for="name">First Name:</label><br>
+              <input type="text" id="name" name="name">
+            </div>
+            <div class="name-field">
+              <label for="lastname">Last Name:</label><br>
+              <input type="text" id="lastname" name="lastname">
+            </div>
+          </div>
+          <br>
+          <div id="Foremail">
+            <label for="email">Email:</label><br>
+            <input type="text" id="email" name="email"><br>
+          </div>
+        </fieldset>
+
+
+
+        <fieldset id="details">
+
+          <label for="visitReason">Reason for Visit:</label><br>
+          <textarea id="visitReason" name="visitReason"></textarea><br>
+        </fieldset>
+        <div class="botton">
+          <input type="submit" value="Submit" id="submit">
+        </div>
+      </form>
+    </section>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,351 @@
+html{scroll-behavior: smooth;}
+body{
+  margin: 0;
+  background-color: #F1FAEE;
+}
+
+
+h1, h6, h3{
+  font-family: 'Playwrite DK Loopet', sans-serif;
+  font-size: 2.5em;
+  color: #030303;
+}
+
+
+
+p{
+  font-family: 'Sevillana', sans-serif;
+  font-size: 1.5em;
+  color: #030303;
+}
+
+a,li,td,figcaption,span{
+  font-family: 'Playwrite DK Loopet', sans-serif;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+
+/** Header **/
+header{
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  
+  z-index: 9999;
+  transition: all .25s linear;
+  background-color: #0c0e0fe7;
+
+}
+header div{
+  width: auto;
+  height: 100%;
+  flex-grow: 1;
+}
+header div img{
+  width: auto;
+  height: 100%;
+}
+header nav menu{
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+header nav menu li{
+  padding: 0 50px;
+}
+header nav menu li a{
+  color: #df0909ee;
+  position: relative;
+}
+
+.MovingHeader{
+  height: 75px;
+  background-color: #06070870;
+ 
+}
+
+
+.MovingHeader a::before {
+  background: #ffffff3d;
+}
+
+
+header nav menu li a::before {
+ 
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  background: #ffffff3d;
+}
+
+header nav menu li a:hover::before {
+  transform: scaleX(1);
+  transform-origin: center;
+  
+}
+
+header nav menu li a::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  
+  transition: transform .3s ease;
+}
+
+
+@media (max-width: 768px) {
+  header {
+    height: 80px;
+  }
+
+  header div {
+  
+    flex-shrink: 2;
+  }
+
+  header nav menu li {
+    padding: 10px 10px;
+  }
+
+  header nav menu li a {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    height: 70px;
+  }
+  
+  header nav menu li {
+    padding: 5px 5px;
+  }
+
+  header nav menu li a {
+    font-size: 15px;
+  }
+
+  header div img {
+    height: auto;
+    max-width: 100px;
+  }
+}
+
+
+.MyBanner{
+  height: 90vh;
+  background-image: url("../img/3.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  
+}
+.MyBanner div{
+  background-color: rgba(53, 40, 40, 0.5);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.MyBanner div h1{
+  font-size: 4em;
+  color: #e7e7e7;
+  padding-top: 25%;
+  padding-right: 50px;
+  text-shadow: 25px 15px 40px rgba(252, 1, 1, 0.5);
+}
+
+
+#Mycontent{
+  
+  height: 250px;
+  width: auto;
+  text-align: center;
+  
+}
+
+#Mycontent h6{
+  font-size: 2.5em;
+}
+
+
+.Mycontent {
+  display: flex;
+  flex-wrap: wrap; 
+  background-color: #ffffff;
+  padding: 2% 5%;
+  width: 100%; 
+  box-sizing: border-box; 
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row; 
+  flex: 1 1 45%;
+  margin: 10px; 
+  box-sizing: border-box; 
+  flex-wrap: wrap; 
+}
+
+
+
+.Chocolate-img {
+  flex: 1 1 50%; 
+}
+
+.chocolate-info {
+  flex: 1 1 50%; 
+}
+
+.Chocolate-img img {
+  border-radius: 7px 0 0 7px; 
+  width: 100%; 
+  height: auto; }
+
+.chocolate-info {
+  border-radius: 0 0 7px 7px; 
+  background-color: #dfdfdf; 
+  box-sizing: border-box; 
+  padding: 10px; 
+}
+
+.chocolate-text {
+  padding: 20px; 
+  box-sizing: border-box; 
+}
+
+.chocolate-text h3,
+.chocolate-text h4,
+.chocolate-text p {
+  margin: 0 0 10px; 
+  padding: 0; 
+}
+
+
+
+
+
+footer{
+  height: auto;
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+}
+footer h6{
+  font-size: 2.5em;
+  color: #e7e7e7;
+}
+
+
+
+.myContainerForm{
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  }
+  
+  
+  .form{
+      display: flex; 
+      flex-direction: column; 
+      width: 70%;
+      
+      font-size: 1.3em;
+      
+      
+      padding: 15px;
+      margin-right: 15px;
+      
+  }
+  
+  .names{
+    font-family: 'Playwrite DK Loopet', sans-serif;
+  display: flex;
+  flex-direction: column; 
+  color: #dfdfdf;
+  margin-left: 5%;
+  margin-right: 5%;
+  }
+  
+  #Foremail{
+    font-family: 'Playwrite DK Loopet', sans-serif;
+  color: #e7e7e7;
+  margin-left: 5%;
+  margin-right: 5%;
+  }
+  
+  #Foremail input[type="text"]{
+      
+      border: 1px solid rgb(10, 10, 10);
+      width:  97%;
+      border-radius: 5px;
+      padding: 7px;
+      
+  }
+  
+  .names input[type="text"] {
+      border: 1px solid rgb(0, 0, 0);
+      padding: 7px;
+      max-width:  100%;
+      border-radius: 5px;
+  }
+  
+  #visitReason{
+      
+      width: 95%; 
+      height: 100px;
+      resize: none;
+      border-radius: 5px;
+     
+  }
+  
+  fieldset {
+      border: none;
+  }
+  
+  #details{
+    font-family: 'Playwrite DK Loopet', sans-serif;
+    color: #e7e7e7;
+  
+      text-align: center;
+  }
+  
+  #submit{
+  
+      background-color: #4a47529a; 
+      color: white; 
+      padding: 12px 24px; 
+      border: none; 
+      cursor: pointer; 
+      border-radius: 4px;
+      width: 25%;
+      
+  }
+  
+  .form .botton{
+  
+  display: flex;
+  
+  justify-content: center;
+  }
+
+  .logoSocial{
+    
+    height: 1%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  .logoSocial div img{
+    margin-top: 10px;
+    width: 50px;
+    padding: 10px;
+
+  }
