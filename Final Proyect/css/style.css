@@ -1,0 +1,648 @@
+html{scroll-behavior: smooth;}
+body{
+  margin: 0;
+  padding: 0;
+
+  background-color: #F1FAEE;
+}
+
+
+h1, h6, h3{
+  font-family: 'Playwrite DK Loopet', sans-serif;
+  font-size: 2.5em;
+  color: #030303;
+}
+
+
+
+p{
+  font-family: 'Sevillana', sans-serif;
+  font-size: 1.5em;
+  color: #030303;
+}
+
+a,li,td,figcaption,span{
+  font-family: 'Playwrite DK Loopet', sans-serif;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+
+/** Header **/
+header{
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  
+  z-index: 9999;
+  transition: all .25s linear;
+  background-color: #0c0e0fe7;
+
+}
+header div{
+  width: auto;
+  height: 100%;
+  flex-grow: 1;
+}
+header div img{
+  width: auto;
+  height: 100%;
+}
+header nav menu{
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+header nav menu li{
+  padding: 0 50px;
+}
+header nav menu li a{
+  color: #df0909ee;
+  position: relative;
+}
+
+.MovingHeader{
+  height: 75px;
+  background-color: #06070870;
+ 
+}
+
+
+.MovingHeader a::before {
+  background: #ffffff3d;
+}
+
+
+header nav menu li a::before {
+ 
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  background: #ffffff3d;
+}
+
+header nav menu li a:hover::before {
+  transform: scaleX(1);
+  transform-origin: center;
+  
+}
+
+header nav menu li a::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  
+  transition: transform .3s ease;
+}
+
+
+@media (max-width: 768px) {
+  header {
+    height: 80px;
+  }
+
+  header div {
+  
+    flex-shrink: 2;
+  }
+
+  header nav menu li {
+    padding: 10px 10px;
+  }
+
+  header nav menu li a {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    height: 70px;
+  }
+  
+  header nav menu li {
+    padding: 5px 5px;
+  }
+
+  header nav menu li a {
+    font-size: 15px;
+  }
+
+  header div img {
+    height: auto;
+    max-width: 100px;
+  }
+}
+
+
+.MyBanner{
+  height: 100vh;
+  background-image: url("../img/3.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  
+}
+.MyBanner div{
+  background-color: rgba(53, 40, 40, 0.5);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.MyBanner div h1{
+  font-size: 4em;
+  color: #e7e7e7;
+  padding-top: 25%;
+  padding-right: 50px;
+  text-shadow: 25px 15px 40px rgba(252, 1, 1, 0.5);
+}
+
+/** Footer (Included) **/
+footer{
+  background-color: #0a0908;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+footer div img{
+  width: 25%;
+  width: auto;
+  height: 100px;
+  
+}
+footer h6{
+
+  font-size: 2em;
+  color: #f2f4f3;
+  margin: 0;
+}
+
+footer p{
+  color: #f2f4f3;
+  font-size: 2em;
+}
+/*Index*/
+
+
+.Mycontent2{display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 80vh;
+  border-radius: 2%;
+  background: #010615;
+}
+
+.ContainInf{
+  display: flex;
+  flex-direction: column;
+ 
+  
+}
+
+.MyImage{
+  
+  height: auto;
+  width: 80%;
+  
+}
+
+.MyInf{
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+}
+.MyImage img{ border-radius: 7px 0 0 7px;
+  height: auto;
+  width: 100%;
+  }
+
+  .SeeBoton{
+    text-align: center;
+  border: solid 2px #f2f4f3;
+  background-color: rgba(255,255,255,0);
+  color: #f2f4f3;
+  padding: 15px 35px;
+  transition: all .25s ease-in-out;
+  width: 100%;
+  }
+
+  .SeeBoton:hover{
+    border: solid 2px #a9927d;
+    background-color: #a9927d;
+    color: #f2f4f3;
+    border-radius: 10px;
+  }
+
+
+/*Product page*/
+.Mycontent{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 80vh;
+  border-radius: 2%;
+  background: #010615;
+  
+}
+
+.wrapper{
+  position: relative;
+  width: 400px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+  transition: 0.5s;
+  background-color: #060c21;
+}
+
+.wrapper:hover{
+  height: 550px;
+}
+.wrapper .Chocolate-img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.wrapper .Chocolate-img img{
+  max-width: 100%;
+  opacity: 0.1;
+  transition: 0.5;
+}
+
+.wrapper:hover .Chocolate-img img
+{opacity:1;
+
+
+}
+
+.wrapper:before
+{
+content: '';
+position: absolute;
+top:-2px;
+left: -2px;
+right: -2px;
+bottom:-2px;
+background: #ffffff;
+z-index: 0;
+
+}
+
+.wrapper:after
+{
+  content: '';
+  position: absolute;
+  top:-2px;
+  left: -2px;
+  right: -2px;
+  bottom:-2px;
+  background: #fff;
+  z-index: -2;
+  
+  }
+
+  .wrapper .chocolate-info{
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    height: 120px;
+    background: rgb(0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.5s;
+  }
+
+  .wrapper:hover .chocolate-info{
+    opacity:1;
+  }
+
+  .wrapper .chocolate-info h2{
+    font: 20px;
+    color:#fff;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 1px;
+    
+  }
+  .wrapper .chocolate-info h2 span{
+    font: 14px;
+    color:#fff;
+    font-weight: 200;
+    letter-spacing: 2px;
+  }
+
+  /*About us contact us*/
+/* CSS Animations */
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-left {
+  animation: slideInLeft 1s forwards;
+}
+
+.slide-in-right {
+  animation: slideInRight 1s forwards;
+}
+
+/*About us contact us*/
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-left {
+  animation: slideInLeft 1s forwards;
+}
+
+.slide-in-right {
+  animation: slideInRight 1s forwards;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateX(0);
+}
+
+/*About us contact us*/
+.container3 {
+  background-color: #0e0e0f;
+  display: flex; /* making my container a flex container */
+  flex-direction: row; /* align it horizontally in a row */
+  flex-wrap: wrap; /* in case the items don't fit, move it to the next line */
+  flex: 1 1 200px; /* how the flex item will grow and shrink depending on the other items and the initial size 200px */
+  justify-content: space-between; /* adding equal space between items */
+  font-family: 'Fredericka the Great', cursive; /* type of font */
+  text-shadow: 1px 1px 2px #291548; /* adding shadow to the font */
+}
+
+.about h2 {
+  font-size: 2.5em;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: #fcf6fd;
+  text-align: center;
+}
+
+.about p {
+  font-size: 2em;
+  color: #fcf6fd;
+}
+
+.MycontactUs {
+  width: 80%;
+}
+
+.about {
+  display: flex; /* making my container a flex container */
+  align-items: center; /* center the flex items */
+  flex-direction: column; /* show them in column */
+}
+
+.container3 h3 {
+  font-size: 1.5em;
+  text-align: center;
+  color: #e7e7e7;
+}
+
+.MycontactUs h3 {
+  font-size: 2.0em;
+  text-align: center;
+  color: #fcf6fd;
+}
+
+.about,
+.myContainerForm {
+  flex: 1 1 48%;
+}
+
+.myContainerForm {
+  background-color: #a9927d;
+  display: flex; /* making my container a flex container */
+  flex-direction: column; /* show them in column */
+  align-items: center; /* center the flex items */
+  border-left: dashed;
+  border-color: #0e0e0f;
+  border-width: 25px;
+}
+
+.form {
+  display: flex; /* making my container a flex container */
+  flex-direction: column; /* show them in column */
+  width: 70%; /* container will have 70% of the width in the parent flex container in this case myContainerForm */
+  font-size: 1.3em; /* size of the font */
+  color: #fcf6fd;
+  padding: 15px; /* adding spaces to all sides */
+  margin-right: 15px; /* add margin to the right */
+}
+
+.names {
+  display: flex; /* making my container a flex container */
+  flex-direction: row; /* align it horizontally in a row */
+  flex-wrap: wrap; /* in case the items don't fit, move it to the next line */
+  justify-content: space-between; /* adding equal space between items */
+  align-items: center; /* center the flex items */
+  margin-left: 5%; /* add margin to the left */
+  margin-right: 5%; /* add margin to the right */
+}
+
+#Foremail {
+  margin-left: 5%; /* add margin to the left */
+  margin-right: 5%; /* add margin to the right */
+}
+
+#Foremail input[type="text"] {
+  border: 1px solid rgb(255, 255, 255);
+  width: 97%;
+  border-radius: 5px;
+  padding: 7px;
+}
+
+.names input[type="text"] {
+  border: 1px solid rgb(255, 255, 255);
+  padding: 7px;
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+#visitReason {
+  width: 95%;
+  height: 100px;
+  resize: none;
+  border-radius: 5px;
+}
+
+fieldset {
+  border: none;
+}
+
+#details {
+  text-align: center;
+}
+
+#submit {
+  background-color: #291548;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 25%;
+}
+
+.form .botton {
+  display: flex;
+  justify-content: center;
+}
+
+/*chocolate page*/
+.wrapper2 {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+  transition: width 0.5s;
+  background-color: #060c21;
+}
+
+
+
+.wrapper2 .Chocolate-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.wrapper2 .Chocolate-img img {
+  max-width: 100%;
+  opacity: 0.1;
+  transition: opacity 0.5s;
+}
+
+.wrapper2:hover .Chocolate-img img {
+  opacity: 1;
+}
+
+.wrapper2:before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #ffffff;
+  z-index: 0;
+}
+
+.wrapper2:after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #fff;
+  z-index: -2;
+}
+
+.wrapper2 .chocolate-info2 {
+  position: absolute;
+  top: 10px;
+  left: 100%;
+  width: 300px;
+  height: calc(100% - 20px);
+  background: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.5s, left 0.5s;
+}
+
+.wrapper2:hover .chocolate-info2 {
+  left: calc(100% - 200px);
+  opacity: 1;
+}
+
+.wrapper2 .chocolate-info2 h2 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+
+.wrapper2 .chocolate-info2 h2 span {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+
+.container2{
+  width: 90%;
+  margin-left: 5%;
+}
+

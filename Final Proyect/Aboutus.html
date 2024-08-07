@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Page of a chocolate store">
+  <meta name="robots" content="noindex, nofollow">
+
+  <title>Chocolate Store</title>
+  <!-- add fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playwrite+DK+Loopet:wght@100..400&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playwrite+DK+Loopet:wght@100..400&family=Sevillana&display=swap"
+    rel="stylesheet">
+
+  <!-- add CSS -->
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- add jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="./js/custom-js.js"></script>
+</head>
+
+
+<body>
+  <header>
+    <div>
+      <a href="index.html"><img src="./img/logo.png" alt="logo"></a>
+    </div>
+    <nav>
+      <menu>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Products.html">Product</a></li>
+        <li><a href="Aboutus.html">About & Contact us</a></li>
+      </menu>
+    </nav>
+  </header>
+  <section class="MyBanner">
+    <div>
+      <h1>Our Company</h1>
+    </div>
+  </section>
+  <main class="container3">
+ 
+    <section class="about hidden">
+      <h2>About us</h2>
+      <div class="MycontactUs">
+        <h3>Welcome to the Chocolate Factory!</h3>
+
+        <p>Our chocolate captures the essence of chocolate indulgence. Known for its smooth texture and rich flavor,
+          Chocolate offers a wide range of chocolate products, from classic milk and dark chocolate bars to an assortment
+          of filled chocolates and truffles. Made with carefully selected ingredients, each product promises a delightful experience,
+          making Chocolate the perfect choice for satisfying everyday chocolate cravings.
+          Whether for a quick snack or a special treat, Chocolate brings a touch of sweetness to any moment.</p>
+      </div>
+    </section>
+
+    <!-- Form Section -->
+
+    <section class="myContainerForm hidden">
+
+      <form action="/submit_form" id="contact-form" method="post" class="form">
+        <h3>Chocolate Factory Form</h3>
+        <fieldset>
+
+          <div class="names">
+            <div class="name-field">
+              <label for="name">First Name:</label><br>
+              <input type="text" id="name" name="name">
+            </div>
+            <div class="name-field">
+              <label for="lastname">Last Name:</label><br>
+              <input type="text" id="lastname" name="lastname">
+            </div>
+          </div>
+          <br>
+          <div id="Foremail">
+            <label for="email">Email:</label><br>
+            <input type="text" id="email" name="email"><br>
+          </div>
+        </fieldset>
+
+        <fieldset id="details">
+          <label for="visitReason">Reason for Visit:</label><br>
+          <textarea id="visitReason" name="visitReason"></textarea><br>
+        </fieldset>
+        <div class="botton">
+          <input type="submit" value="Submit" id="submit">
+        </div>
+      </form>
+
+    </section>
+  </main>
+  <br>
+  <footer>
+    <div>
+      <a href="index.html"><img src="./img/logo.png" alt="logo"></a>
+    </div>
+    <div>
+      <h6>Chocolate Store</h6>
+      <p>2024 reserver right. | terms and conditions | Polícy | Contact: choco@email.com</p>
+    </div>
+  </footer>
+</body>
+
+</html>
